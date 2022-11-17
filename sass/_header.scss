@@ -1,0 +1,127 @@
+.header {
+    width: 100%;
+    height: 650px;
+    background-color: $color-yllow;
+    background: url("../img/header/header-bg.jpg") no-repeat;
+
+    &__menu {
+        width: 70%;
+        height: 40px;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_logo {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        &_item {
+            width: 452px;
+            height: 22px;
+            margin-left: 100px;
+            display: flex;
+            justify-content: space-between;
+
+            .link {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: $color-black;
+            }
+        }
+
+        &_phone {
+            p{
+                font-weight: 600;
+                font-size: 24px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__conteiner {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 550px;
+        height: 430px;
+        display: inline-block;
+
+        &_active {
+            width: 480px;
+            height: 310px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 70px;
+            }
+
+            h2 {
+                padding-top: 15px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            .btn {
+                width: 304px;
+                height: 60px;
+                margin-top: 50px;
+                position: relative;
+                button {
+                    width: 304px;
+                    height: 60px;
+                    background: $color-red;
+                    color: $color-white;
+                    border: none;
+                    font-weight: 600;
+                    font-size: 24px;
+                    position: absolute;
+                    z-index: 2;
+                    cursor: pointer;
+                    
+                }
+
+                &::before {
+                    content: "";
+                    width: 304px;
+                    height: 60px;
+                    position: absolute;
+                    top: 9px;
+                    left: 9px;
+                    border: 2px solid $color-white;
+                }
+            }
+        }
+
+        &_passive {
+            display: flex;
+            margin-top: 76px;
+            gap: 15px;
+
+            .passive__item {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                white-space: pre-line;
+            }
+        }
+    }
+
+    &__phone {
+        align-self: flex-end;
+        &_img {
+            width: 100px;
+            height: 100px;
+            img {
+                padding-top: 40px;
+            }
+        }
+    }
+}

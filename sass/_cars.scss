@@ -1,0 +1,184 @@
+.cars {
+    width: 100%;
+    height: auto;
+    padding-top: 154px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__tab-btn {
+        max-width: 700px;
+        height: auto;
+        margin: 60px auto 50px auto;
+        display: flex;
+        justify-content: space-around;
+
+        &_btn {
+            width: 200px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 20px;
+            border: 1px solid #EBEBEB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            label {
+                cursor: pointer;
+            }
+            input {
+                appearance: none;
+            }
+        }
+
+        .border__car {
+            border: 1px solid $color-yllow;
+        }
+
+    }
+
+    &__info {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+
+        &_car {
+            width: 300px;
+            height: auto;
+            padding-top: 100px;
+
+
+            &-title {
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 37px;
+            }
+
+            &-options {
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+
+                p {
+                    position: relative;
+                    padding-left: 20px;
+                }
+                p::before {
+                    content: "";
+                    width: 15px;
+                    height: 14px;
+                    background: url("../img/main/checkIcon.svg");
+                    position: absolute;
+                    left: 0;
+                }
+            }
+
+            &-btn {
+                width: 280px;
+                height: 50px;
+                border: none;
+                background-color: $color-yllow;
+                font-weight: 500;
+                font-size: 20px;
+                cursor: pointer;
+                margin-top: 35px;
+            }
+        }
+
+        &_img {
+            padding-left: 50px;
+            width: 674px;
+            height: 454px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__info-none {
+        display: none;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: none;
+        background: rgba(51, 51, 51, 0.9);
+        
+
+        &__content {
+            width: 500px;
+            height: auto;
+            margin: 15% auto;
+            border: 1px solid $color-black;
+            background-color: $color-white;
+            border-radius: 10px;
+
+            &_close {
+                color: $color-red;
+                font-size: 46px;
+                margin-left: 465px;
+                cursor: default;
+
+            }
+            
+            &_column{
+                height: 250px;
+                padding-bottom: 44px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                input {
+                    width: 350px;
+                    padding: 6px 15px;
+                    border: 1px solid $color-black;
+                    border-radius: 2px;
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                    font-size: 16px;
+                    outline: none;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+
+                select {
+                    width: 350px;
+                    padding: 5px 15px;
+                    border: 1px solid $color-black;
+                    border-radius: 2px;
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                    font-size: 16px;
+                    outline: none;
+                    text-align: center;
+                    appearance: none;
+                    cursor: pointer;
+                }
+
+                button {
+                    width: 280px;
+                    height: 40px;
+                    border: none;
+                    background-color: $color-yllow;
+                    font-weight: 400;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

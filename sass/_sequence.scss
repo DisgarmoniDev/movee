@@ -1,0 +1,39 @@
+.sequence {
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 95px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__conteiner {
+        width: 1100px;
+        height: auto;
+        margin-top: 66px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 490px;
+        height: 102px;
+        display: flex;
+        justify-content: space-between;
+        gap: 55px;
+
+        &_step {
+            min-width: 65px;
+            height: 36px;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
